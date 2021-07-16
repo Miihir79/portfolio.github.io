@@ -1,0 +1,992 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif; 
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    background: rgb(66, 66, 66);
+    width: 12px;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    
+    background: rgb(180, 177, 177);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    
+    background: rgb(156, 154, 154);
+    
+}
+.navbar{
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top : 0;
+    cursor: pointer;    
+}
+
+.nav-list{
+    width: 100%;    
+    display: flex;
+    align-items:flex-start;
+
+}
+
+.logo{
+    width: 5%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    animation-name: logo-anim;
+    animation-duration:1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+}
+
+@keyframes logo-anim {
+    from{
+        width: 5%;
+    }
+    to{
+        width:10%;
+        }
+}
+.logo img{
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.nav-list li{
+    font-size: 19px;
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{    
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: gray;
+    transform: scale(1.17);
+    transition: 0.5 smooth;
+}
+
+.background{
+    background: rgba(0.6, 0.3, 0.5, 0.3) url("img/background.jpg");
+    background-size: cover;    
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundNav{
+    background: rgb(58, 58, 58) url("img/background.jpg");
+    background-size: cover;    
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-main{
+    height: 40%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.firstHalf{
+    margin-top: 30vh;
+    background: #343F4F;
+    overflow: hidden;
+    width: 80%;
+    padding: 4rem;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.firstHalf p{
+    color:#fcfcfc;
+}
+
+@keyframes firstHalfAnim {
+    from{
+        margin-top: 0%;
+    }   
+}
+
+.text-big{
+    animation: firstHalfAnim;
+    animation-duration: 2s;    
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btn{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px solid #7fb237;
+    border-radius: 7px;
+    background: none;
+    color: #7fb237;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.7s ;    
+}
+
+.btn:hover{
+    font-size: 18px;
+    transform: scale(1.07);
+    transition: 0.5 smooth; 
+    color: black;
+    background: #7fb237;
+    opacity: 0.7;
+}
+
+.section{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;    
+    /*background-color: #d6f0ff;*/       
+  
+}
+.sectionsubtag{
+    margin-bottom: 1rem;
+}
+.Left-flip{
+    flex-direction: row-reverse;
+}
+
+.thumbnail img{
+    margin-top: 10px;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 26px;   
+    cursor: pointer;
+}
+.thumbnail{
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+.thumbnail :hover{
+    transform: scale(1.07);
+    transition: 0.5 smooth;    
+}
+.dsc-logo{
+    cursor: pointer;
+}
+.dsc-logo:hover{
+    transform: scale(1.07);
+    transition: 0.5 smooth; 
+}
+.sectionTag{
+    padding-top: 16px;
+}
+
+.paras{
+    margin-top: 30px;
+    padding: 0px 65px;
+}
+.text-small{
+    font-size: 1.2rem;
+}
+.text-small::first-letter{
+    color: #e21212;
+    font-size: 2rem;
+}
+.timeline{
+    color: gray;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+    flex-direction: column;
+}
+
+.link{
+    size: 14px;  
+    text-align: center;  
+}
+.contactMe{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    size: 20px;
+    font-size: 2rem;
+    font-family: 'Roberto' sans-serif;
+}
+
+.linkHolder{
+
+    text-align: center;
+}
+.footer-text{
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.burger{
+    display:none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 5px;
+}
+.line{
+    width: 33px;
+    background: white;
+    height: 3px;
+    margin: 4px;
+
+}
+.fullscreen{
+    height: fit-content;
+    width: 100%;
+    background-color: #d6f0ff;
+}
+
+.expHeading{
+    text-align: left;
+    margin-left: 5%;   
+    font-size: 55px;
+    padding-top: 5%;
+    font-family: 'Playfair Display', serif;
+}
+.dscLogo{
+    width: 70%;
+    
+}
+.androidLogo img{
+   margin-top: 10px;   
+   width: 10%;
+   
+}
+.androidLogo{
+    width: fit-content;
+}
+
+.androidLogo img:hover{
+    transform: scale(1.17);
+    transition: 0.5 smooth;
+}
+
+#koltinLogoExp{
+    height: 1.7rem;
+    width: auto;
+}
+
+#firebase{
+    height: 2rem;
+    width: auto;
+}
+
+#androidStudioLogoExp{
+    height: 2rem;
+    width: auto;
+}
+
+.appdev-section{
+    background: rgba(0.6, 0.3, 0.5, 0.8) url("img/background-appdev.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 125vh;
+}
+.appdev-section img:hover{
+    transform: scale(1.17);
+    transition: 0.5 smooth;
+}
+#android-kotlin{
+    margin-right: 40%;
+    margin-top: 50%;
+    position: absolute;
+    width: 10%;
+}
+#android-firebase{
+    width: 7%;
+}
+#android-figure{
+    height: 41%; 
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.androidDevText{
+    width: min-content;
+}
+#android-studio-png{
+    width: 10%;
+}
+
+.otherLanguages{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    height: fit-content;
+}
+
+.otherLang-title-img{
+    display: flex;
+    margin-left: 3%;
+}
+
+#logo-otherLang{
+    width: 100px;
+}
+.langHolder-title{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.langHolder-title h1{
+    font-size: 2rem;
+    color: #343F4F;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+}
+.langHolder{   
+    height: 400px;
+    width: 500px;
+    position: relative;  
+    cursor: pointer; 
+}
+.langHolder-app{   
+    height: 400px;
+    width: 500px;
+    position: relative;   
+    cursor: pointer; 
+}
+.langHolder-other{   
+    height: 400px;
+    width: 500px;
+    position: relative;   
+    cursor: pointer; 
+}
+
+#text-otherlang{ 
+    color: #030b0f;   
+    margin-top: 32px;
+    font-size: 26px;
+}
+
+.langCardHolder{
+    display: flex;
+    height: fit-content;
+}
+
+.card{
+    background-color: #fff;
+    width :40%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: grid;
+    position: absolute;
+    min-height:  40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem; 
+    padding: 2px;
+    transition: transform 200ms;
+    box-shadow: 0 5px 10px 0 #00000040 , 0 15px 20px 0 #00000020;
+}
+
+.card:nth-last-child(1){
+    --y:calc(-50% + 15px);
+    transform: translate(-50%,var(--y)) scale(1.05);
+}
+
+.card:nth-last-child(2){
+    --y:calc(-50%);
+    transform: translate(-50%,var(--y)) scale(1);
+}
+
+.card:nth-last-child(3){
+    --y:calc(-50% - 15px);
+    transform: translate(-50%,var(--y)) scale(0.95);
+}
+
+.card:nth-last-child(n+4){
+    --y:calc(-50% - 30px);
+    transform: translate(-50%,var(--y)) scale(0.9);
+    /*box-shadow: 0 0 1px 1px #00000030;*/
+}
+.cardApp{
+    background-color: #fff;
+    width :40%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: grid;
+    position: absolute;
+    min-height:  40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem; 
+    padding: 2px;
+    transition: transform 200ms;
+    box-shadow: 0 5px 10px 0 #00000040 , 0 15px 20px 0 #00000020;
+}
+
+.cardApp:nth-last-child(1){
+    --y:calc(-50% + 15px);
+    transform: translate(-50%,var(--y)) scale(1.05);
+}
+
+.cardApp:nth-last-child(2){
+    --y:calc(-50%);
+    transform: translate(-50%,var(--y)) scale(1);
+}
+
+.cardApp:nth-last-child(3){
+    --y:calc(-50% - 15px);
+    transform: translate(-50%,var(--y)) scale(0.95);
+}
+
+.cardApp:nth-last-child(n+4){
+    --y:calc(-50% - 30px);
+    transform: translate(-50%,var(--y)) scale(0.9);
+    /*box-shadow: 0 0 1px 1px #00000030;*/
+}
+
+.cardOth{
+    background-color: #fff;
+    width :40%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: grid;
+    position: absolute;
+    min-height:  40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem; 
+    padding: 2px;
+    transition: transform 200ms;
+    box-shadow: 0 5px 10px 0 #00000040 , 0 15px 20px 0 #00000020;
+}
+
+.cardOth:nth-last-child(1){
+    --y:calc(-50% + 15px);
+    transform: translate(-50%,var(--y)) scale(1.05);
+}
+
+.cardOth:nth-last-child(2){
+    --y:calc(-50%);
+    transform: translate(-50%,var(--y)) scale(1);
+}
+
+.cardOth:nth-last-child(3){
+    --y:calc(-50% - 15px);
+    transform: translate(-50%,var(--y)) scale(0.95);
+}
+
+.cardOth:nth-last-child(n+4){
+    --y:calc(-50% - 30px);
+    transform: translate(-50%,var(--y)) scale(0.9);
+    /*box-shadow: 0 0 1px 1px #00000030;*/
+}
+
+.skillRating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a2b3c;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px rgba(255, 255 , 255,0.25),
+    inset 2px 2px 5px rgba(255, 255 , 255,0.25),
+    8px 30px 30px rgba(0,0,0,0.4),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1f9cff;
+    font-family: 'Poppins',sans-serif ;
+}
+
+.container .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px rgba(255, 255 , 255,0.25),
+    inset 2px 2px 5px rgba(255, 255 , 255,0.25),
+    8px 30px 30px rgba(0,0,0,0.4),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+.container:hover .skills{
+    filter: blur(1px);
+    opacity: 0.2;
+}
+.container .skills:hover{
+    filter: blur(0px);
+    opacity: 1;
+}
+.container .skills h3{
+    min-width: 180px;
+    text-align: right;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+}
+.container .skills .ratings{
+    position: relative;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    top: 7px;
+    margin: 8px 0;
+    flex-direction: row-reverse;
+}
+.container .skills .ratings input{
+    position: relative;
+    width: 20px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;    
+    appearance: none;
+    overflow: hidden;
+}
+
+.container .skills .ratings input::before{
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 26px;
+    position: absolute;
+    left: 8px;
+    color: #030b0f;
+    transition: 0.5s;
+}
+
+.container .skills .ratings input:nth-child(2n+1):before{
+    right: 8px;
+    left: initial;
+}
+
+.container .skills .ratings input:checked ~ input::before,
+.container .skills .ratings input:checked::before{
+    color:#1f9cff;
+}
+
+.project{
+    display: flex;
+    height: fit-content;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    background: rgb(30, 80, 80);
+    overflow: hidden;
+}
+.projectTitle{
+    margin-bottom: 10%;
+    font-size: 40px;
+    margin-top: 0;
+    color: rgb(204, 199, 199);
+}
+.cards{   
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.projectCard{
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: 0.2s;
+    width: 10%;
+    box-shadow: 4px 4px 15px 2px rgba(0,0,0, 0.75);
+}
+
+.projectCard h2{
+    color: darkorchid;
+}
+
+.projectCard:not(:first-child){
+    margin-left: -4rem;
+}
+
+.projectCard:hover{
+    transform: translateY(-1rem);
+}
+
+.projectCard:hover ~.projectCard{
+    transform: translateX(4rem);
+}
+
+.wrapper{
+    margin-top: 1rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.wrapper .static-text{
+    color:#fcfcfc;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dynamic-txts li{
+    color:#FC6D6D;
+    list-style: none;
+    margin-bottom: 1px;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top:0;
+    animation: slide 12s steps(4) infinite;
+}
+
+.dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    background: #343F4F;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(16) infinite;
+}
+
+.cardProfile{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    margin-bottom: 5%;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform:perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+}
+.cardProfile:hover{
+    transform: translateX(50%);
+}
+.cardProfile .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background: #000000;
+    transition:1s;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+}
+.cardProfile .imgBox img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.cardProfile .imgBox img:nth-child(2){
+    transform: rotateY(180deg);
+}
+
+.cardProfile:hover .imgBox{
+    transform:rotateY(-180deg);
+
+}
+.cardProfile .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardProfile .details .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardProfile .details .content h2{
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-top: 25%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cardProfile .details .content h2 span{
+    color: #e21212;
+    font-size: 0.8em;
+
+}
+
+.cardProfile .details .content .social-icons{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+.cardProfile .details .content .social-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #0a2b3c;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.cardProfile .details .content .social-icons a:hover{
+    background: #e21212;
+
+}
+
+.lastCardText{
+    margin-top: 15%;
+    margin-right: 5%;
+}
+
+.fa-heart{
+    color: #e21212;
+    margin:2px;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }    
+}
+
+@keyframes typing {
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+    }    
+}
+
+@keyframes swap {
+
+    50% {
+        transform: translate(-50%, calc(var(--y) - 250px)) scale(0.85) rotate(-5deg);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
+        z-index: -1;
+    }
+    
+}
+
+@keyframes LogosAnim {
+    from{
+       top: 0px;
+       width: 0px; 
+    }
+}
+
+
+@media only screen and (max-width:1150px){
+
+    .nav-list{
+        flex-direction: column;
+    }    
+
+    .burger{
+        display: block;
+    }
+
+    .nav-resp{
+        z-index: 99;
+        height:372px;
+    } 
+
+    .menu-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .nav-resp{
+        height: 50px;
+    }
+   
+    .buttons{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .btn{
+        font-size: 20px;
+    }
+    .paras{
+        padding: 0px;
+    }
+    .thumbnail{
+        width: 50%;
+        align-self: center;
+    }
+
+    .thumbnail img {
+        margin-top: 4%;
+        width: 70%;       
+    }
+
+    .timeline{
+        text-align: center;        
+    }
+
+    .androidLogo{
+        margin-left: 40%;
+    }
+    .dsc-logo{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .firstHalf {
+        position: absolute;
+        top: 0px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo img {
+        width: 218%;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .nav-list li {
+        text-align: center;
+        font-size: 20px;
+        list-style: none;
+        padding: 20px 30px;
+        align-self: center;
+    }
+    .langCardHolder{
+        margin:0;
+        flex-direction:column;
+    }
+    .langHolder{       
+        margin-inline: auto;
+        height: 300px;
+    }
+
+    .langHolder-app{        
+        margin-inline: auto;
+        height: 300px;
+    }
+    .langHolder-other{        
+        margin-inline: auto;
+        height: 300px;
+    }
+    .cards{
+        margin-bottom: 10px;  
+    }
+    .dscLogo{
+        margin-left: 10%;
+    }
+}
