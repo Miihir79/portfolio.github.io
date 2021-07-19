@@ -922,6 +922,9 @@ html{
     .btn{
         font-size: 20px;
     }
+    .container .skills h3 {
+        min-width: 31%;
+    }
     .paras{
         padding: 0px;
     }
@@ -987,11 +990,11 @@ html{
     .cards{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-        margin-bottom: 10px;
+        margin-bottom: 10px;  
     }
     .dscLogo{
         margin-left: 10%;
-    }    
+    }
     .projectCard{
 
         width: auto;
@@ -999,4 +1002,5 @@ html{
     .projectCard:not(:first-child){
         margin-left: 0rem;
     }
+    
 }
