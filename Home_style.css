@@ -239,6 +239,7 @@ html{
 }
 
 .contact{
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +259,9 @@ html{
     font-size: 2rem;
     font-family: 'Roberto' sans-serif;
 }
-
+.footer{
+    max-width: 100%;
+}
 .linkHolder{
 
     text-align: center;
@@ -267,6 +270,15 @@ html{
     padding: 5px;
     padding-bottom: 10px;
     font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-text-last{
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 18px; 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1010,5 +1022,19 @@ html{
     }    
     .projectCard:hover ~.projectCard{
         transform: translateY(2rem);
+    }    
+
+    .cardProfile{
+        width: 200px;
+        height: 350px;
+    }
+
+    .cardProfile .details .content {
+        width: 200px;
+        height: 350px;
+    }
+    .lastCardText{
+        
+        padding-left: 5px;
     }
 }
