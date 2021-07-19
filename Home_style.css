@@ -1002,5 +1002,11 @@ html{
     }
     .projectTitle {
         margin-top:5px;
+    }
+    .projectCard:hover{
+        transform: translateY(-1rem);
     }    
+    .projectCard:hover ~.projectCard{
+        transform: translateY(2rem);
+    }
 }
