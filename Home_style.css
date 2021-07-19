@@ -1001,7 +1001,8 @@ html{
         margin-left: 0rem;
     }
     .projectTitle {
-        margin-top:5px;
+         margin-top:7%;
+        margin-bottom: 5%;
     }
     .projectCard:hover{
         transform: translateY(-1rem);
