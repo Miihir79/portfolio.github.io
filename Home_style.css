@@ -995,11 +995,12 @@ html{
         margin-left: 10%;
     }
     .projectCard{
-
         width: auto;
     }
     .projectCard:not(:first-child){
         margin-left: 0rem;
     }
-    
+    .projectTitle {
+        margin-top:5px;
+    }    
 }
