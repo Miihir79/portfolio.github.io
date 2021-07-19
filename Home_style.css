@@ -951,7 +951,6 @@ html{
     }
     
     .firstHalf {
-        position: absolute;
         top: 0px;
         width: 80%;
         display: flex;
