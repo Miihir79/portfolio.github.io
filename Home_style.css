@@ -124,7 +124,7 @@ html{
 }
 
 .firstHalf{
-    margin-top: 30vh;
+    margin-top: 20vh;
     background: #343F4F;
     overflow: hidden;
     width: 80%;
@@ -858,6 +858,10 @@ html{
 .fa-heart{
     color: #e21212;
     margin:2px;
+}
+
+.greyish{
+    color:#686666
 }
 
 @keyframes slide {
