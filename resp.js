@@ -4,6 +4,8 @@ const navList = document.querySelector('.nav-list')
 const textClickable_exp = document.querySelector('.exp-clicked')
 const textClickable_home = document.querySelector('.home-clicked')
 const textClickable_connect = document.querySelector('.connect-clicked')
+const textClickable_skills = document.querySelector('.skills-clicked')
+const textClickable_contact = document.querySelector('.contact-clicked')
 
 /*window.addEventListener('scroll',()=>{
     document.body.style.setProperty('--scroll',window.pageYOffset/(document.body.offsetHeight - window.innerHeight));
@@ -26,6 +28,16 @@ textClickable_home.addEventListener('click', () => {
     navList.classList.toggle('menu-resp');
 })
 textClickable_connect.addEventListener('click', () => {
+
+    navBar.classList.toggle('nav-resp');
+    navList.classList.toggle('menu-resp');
+})
+textClickable_contact.addEventListener('click', () => {
+
+    navBar.classList.toggle('nav-resp');
+    navList.classList.toggle('menu-resp');
+})
+textClickable_skills.addEventListener('click', () => {
 
     navBar.classList.toggle('nav-resp');
     navList.classList.toggle('menu-resp');
