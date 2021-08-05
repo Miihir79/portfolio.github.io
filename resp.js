@@ -3,7 +3,7 @@ const navBar = document.querySelector('.navbar')
 const navList = document.querySelector('.nav-list')
 const textClickable_exp = document.querySelector('.exp-clicked')
 const textClickable_home = document.querySelector('.home-clicked')
-const textClickable_connect = document.querySelector('.connect-clicked')
+const textClickable_project = document.querySelector('.project-clicked')
 const textClickable_skills = document.querySelector('.skills-clicked')
 const textClickable_contact = document.querySelector('.connect-clicked')
 
@@ -27,18 +27,19 @@ textClickable_home.addEventListener('click', () => {
     navBar.classList.toggle('nav-resp');
     navList.classList.toggle('menu-resp');
 })
-textClickable_connect.addEventListener('click', () => {
+textClickable_project.addEventListener('click', () => {
 
     navBar.classList.toggle('nav-resp');
     navList.classList.toggle('menu-resp');
 })
 
-textClickable_contact.addEventListener('click',()=>{
+textClickable_contact.addEventListener('click', () => {
 
     navBar.classList.toggle('nav-resp');
     navList.classList.toggle('menu-resp');
 })
-textClickable_skills.addEventListener('click',()=>{
+textClickable_skills.addEventListener('click', () => {
+    console.log()
     navBar.classList.toggle('nav-resp');
     navList.classList.toggle('menu-resp');
 })
