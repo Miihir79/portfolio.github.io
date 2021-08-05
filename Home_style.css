@@ -350,7 +350,7 @@ html{
     height: 125vh;
 }
 .appdev-section img:hover{
-    transform: scale(1.17);
+    transform: scale(1.07);
     transition: 0.5 smooth;
 }
 #android-kotlin{
@@ -860,8 +860,31 @@ html{
     margin:2px;
 }
 
+
 .greyish{
     color:#686666
+}
+
+.certificates{
+    height: 100%;
+}
+#coursera{
+    margin-left: 15%;
+    height: 40%;
+}
+#udemy{
+    margin-left: 5%;
+    height: 40%;
+}
+
+.certi-heading{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #1f9cff;
+    size: 25px;
+    font-size: 2rem;
+    font-family: 'Roberto' sans-serif;
 }
 
 @keyframes slide {
