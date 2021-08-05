@@ -1064,4 +1064,19 @@ html{
         
         padding-left: 5px;
     }
+
+    .certificates{
+        width: 100%;
+    }
+
+    #coursera{
+        margin-left: 5%;
+        width: 80%;
+        height: auto;
+    }
+
+    #udemy{
+        width: 80%;
+        height: auto;
+    }
 }
