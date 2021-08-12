@@ -886,6 +886,25 @@ html{
     font-size: 2rem;
     font-family: 'Roberto' sans-serif;
 }
+#appStoreIcon{
+    height: 20rem;
+    cursor: pointer;
+}
+.app-playstore{
+    background-color: #fff;
+    width: fit-content;
+    padding-top: 2%;
+    display: flex;
+    padding-left: 2%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 2%;
+    border-radius: 5%;
+}
+.app-playstore .h2{
+    font-family:'Times New Roman', Times, serif;
+}
 
 @keyframes slide {
     100%{
@@ -1078,5 +1097,14 @@ html{
     #udemy{
         width: 80%;
         height: auto;
+    }
+    #appStoreIcon{
+        height: 15rem;
+    }
+    .app-playstore{
+        width: 80%;
+        margin-left: 5%;
+        justify-content: center;
+        align-items: center;
     }
 }
