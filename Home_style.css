@@ -714,6 +714,13 @@ html{
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.buttons{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: end;
+}
 
 .dynamic-txts li{
     color:#FC6D6D;
@@ -977,6 +984,8 @@ html{
     .buttons{
         margin-top: 1rem;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .btn{
         font-size: 20px;
